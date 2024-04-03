@@ -406,7 +406,7 @@
   display: grid;
   grid-template-columns:45rem 45rem 45rem;
   align-items: center;
-  
+  justify-content: center;
 }
 .latestStyle p{
   color: var(--clr-light);
@@ -438,6 +438,15 @@
   color: var(--clr-dark);
   font-weight: 500;
   text-align: justify;
+}
+@media screen and (max-width: 520px) {
+  .latestStyle__card h2{
+    display: none;
+  }
+  .latestStyle__wrapper{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
 /* CALL TO ACTION */
@@ -501,7 +510,7 @@
 .aboutBanner__right h1{
   font-size: 6rem;
   font-weight: 700;
-  letter-spacing: 2rem;
+  letter-spacing: 1.5rem;
   margin-bottom: 2.5rem;
 }
 .aboutBanner__right ul{
@@ -530,6 +539,18 @@
   height: .2rem;
   bottom: .5rem;
   right: 1rem;
+}
+/* ABOUT PAGE BANNER MOBILE */
+@media screen and (max-width: 520px){
+  .aboutBanner__left{
+    display: none;
+  }
+  .aboutBanner__right h1{
+    font-size: 4rem;
+  }
+  .aboutBanner__right ul li a{
+    font-size: 1.5rem;
+  }
 }
 
 /* REPEATABLE COMPONENTS */
