@@ -392,6 +392,48 @@
   }
 }
 
+.package__wrapper h2 {
+  color: var(--clr-primary);
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 3rem;
+}
+.package__theme {
+  padding: 5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.package__left {
+  width: 500rem;
+  margin-left: 20rem;
+  margin-top: 5rem;
+}
+
+.package__left img {
+  width: 70rem;
+}
+.package__right h2 {
+  color: var(--clr-primary);
+  display: flex;
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-left: 6rem;
+  height: -20px;
+}
+.package__right p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: justify;
+}
+.package__theme:nth-child(odd) {
+  background-color: var(--clr-semilight);
+  flex-direction: row-reverse;
+  display: flex;
+}
+
 /* LATEST STYLE SECTION */
 .latestStyle{
   padding: 3rem 0;
@@ -447,6 +489,36 @@
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+}
+/* UPDATE SECTION */
+.updateSection__wrapper{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.updateSection__right img{
+  margin-top: 3rem;
+  max-width: 69rem;
+  margin-bottom: 5rem;
+}
+.updateSection__left h1{
+  color: var(--clr-primary);
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 5rem;  
+  text-align: center;
+}
+
+/* CONTACT SECTION */
+.contactSection__wrapper h1{
+  color: var(--clr-primary);
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.contactSection__left p{
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 /* CALL TO ACTION */
@@ -552,6 +624,7 @@
     font-size: 1.5rem;
   }
 }
+
 
 /* CATALOG PAGE BANNER */
 .catalogBanner__bg{
